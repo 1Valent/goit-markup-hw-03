@@ -1,123 +1,136 @@
 <html lang="ru">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-        <!-- Сначала нормализатор -->
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-        <!-- Потом ваши стили -->
-        <link rel="stylesheet" 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <!-- Сначала шрифт, потом нормализатор -->
+    <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
-        <link rel="stylesheet" href="./css/common.css">  
-    </head>
-    <body class="page">
-        <!--шапка сайта-->
-        <header>       
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!-- Потом ваши стили -->
+    <link rel="stylesheet" href="./css/common.css">
+</head>
+</head>
+
+<body class="page">
+    <!--шапка сайта-->
+    <header class="header">
+        <div class="container">
             <a href="/index.html" lang="en" class="logo"><span class="logo-span">Web</span>Studio</a>
-            
-            <nav>
-            
-                <ul class="list site-nav">                  
-                    <li><a href="./index.html" class="link">Студия</a></li>
-                    <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li><a href="#" class="link">Контакты</a></li>
+            <div class="header-nav">
+                <nav>
+                    <ul class="list site-nav">
+                        <li><a href="./index.html" class="link current">Студия</a></li>
+                        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                        <li><a href="#" class="link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="list auth-nav">
+                    <li><a href="mailto:info@devstudio.com" target="_blank" class="link"> info&#64devstudio.com </a>
+                    </li>
+                    <li><a href="tel:+380961111111" target="_blank" class="link"> +38 096 111 11 11 </a></li>
                 </ul>
-            </nav>
-            <ul class="list auth-nav">
-                <li><a href="mailto:info@devstudio.com" target="_blank" class="link"> info&#64devstudio.com </a></li>
-                <li><a href="tel:+380961111111" target="_blank" class="link"> +38 096 111 11 11 </a></li>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- job-options -->
+        <section class="job-list section">
+            <!-- спрятать -->
+            <h1 class="visually-hidden">job-options</h1>
+            <ul class="list container" class="job-options-list">
+                <li><button type="button" class="job-option all">Все</button></li>
+                <li><button type="button" class="job-option web">Веб-сайты</button></li>
+                <li><button type="button" class="job-option app">Приложения</button></li>
+                <li><button type="button" class="job-option design">Дизайн</button></li>
+                <li><button type="button" class="job-option marketing">Маркетинг</button></li>
             </ul>
-        </header>
-        <main>
-            <!-- job-options -->
-            <section class="job-list section">
-                <!-- спрятать -->
-                <h1 class="visually-hidden">job-options</h1>
-                <ul class="list" class="job-options-list">
-                    <li><button type="button" class="job-option all">Все</button></li>
-                    <li><button type="button" class="job-option web">Веб-сайты</button></li>
-                    <li><button type="button" class="job-option app">Приложения</button></li>
-                    <li><button type="button" class="job-option design">Дизайн</button></li>
-                    <li><button type="button" class="job-option marketing">Маркетинг</button></li>
-                </ul>
-                <ul class="list">
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/1.jpg" alt="Технокряк" width="370" height="294">
-                            <h2 class="job-list-title">Технокряк</h2>
-                            <p class="job-list-text">Веб-сайт</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/2.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
-                            <h2 class="job-list-title">Постер New Orlean vs Golden Star</h2>
-                            <p class="job-list-text">Дизайн</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/3.jpg" alt="Ресторан Seafood" width="370" height="294">
-                            <h2 class="job-list-title">Ресторан Seafood</h2>
-                            <p class="job-list-text">Приложение</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/4.jpg" alt="Проект Prime" width="370" height="294">
-                            <h2 class="job-list-title">Проект Prime</h2>
-                            <p class="job-list-text">Маркетинг</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/5.jpg" alt="Проект Boxes" width="370" height="294">
-                            <h2 class="job-list-title">Проект Boxes</h2>
-                            <p class="job-list-text">Приложение</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/6.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                            <h2 class="job-list-title">Inspiration has no Borders</h2>
-                            <p class="job-list-text">Веб-сайт</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/7.jpg" alt="Издание Limited Edition" width="370" height="294">
-                            <h2 class="job-list-title">Издание Limited Edition</h2>
-                            <p class="job-list-text">Дизайн</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/8.jpg" alt="Проект LAB" width="370" height="294">
-                            <h2 class="job-list-title">Проект LAB</h2>
-                            <p class="job-list-text">Маркетинг</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="job-list-link" href="">
-                            <img src="./images/portfolio/9.jpg" alt="Growing Business" width="370" height="294">
-                            <h2 class="job-list-title">Growing Business</h2>
-                            <p class="job-list-text">Приложение</p>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer class="footer">        
+            <ul class="list container">
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/1.jpg" alt="Технокряк" width="370" height="294">
+                        <h2 class="job-list-title">Технокряк</h2>
+                        <p class="job-list-text">Веб-сайт</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/2.jpg" alt="Постер New Orlean vs Golden Star" width="370"
+                            height="294">
+                        <h2 class="job-list-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="job-list-text">Дизайн</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/3.jpg" alt="Ресторан Seafood" width="370" height="294">
+                        <h2 class="job-list-title">Ресторан Seafood</h2>
+                        <p class="job-list-text">Приложение</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/4.jpg" alt="Проект Prime" width="370" height="294">
+                        <h2 class="job-list-title">Проект Prime</h2>
+                        <p class="job-list-text">Маркетинг</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/5.jpg" alt="Проект Boxes" width="370" height="294">
+                        <h2 class="job-list-title">Проект Boxes</h2>
+                        <p class="job-list-text">Приложение</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/6.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                        <h2 class="job-list-title">Inspiration has no Borders</h2>
+                        <p class="job-list-text">Веб-сайт</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/7.jpg" alt="Издание Limited Edition" width="370" height="294">
+                        <h2 class="job-list-title">Издание Limited Edition</h2>
+                        <p class="job-list-text">Дизайн</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/8.jpg" alt="Проект LAB" width="370" height="294">
+                        <h2 class="job-list-title">Проект LAB</h2>
+                        <p class="job-list-text">Маркетинг</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="job-list-link" href="">
+                        <img src="./images/portfolio/9.jpg" alt="Growing Business" width="370" height="294">
+                        <h2 class="job-list-title">Growing Business</h2>
+                        <p class="job-list-text">Приложение</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
             <a href="/index.html" lang="en" class="footer-logo"><span class="logo-span">Web</span>Studio</a>
             <address>
                 <ul class="list">
-                    <li><a href="https://cutt.ly/HHQWCcf" rel="noopener noreferrer" target="_blank" class="map adress">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a href="mailto:info@devstudio.com" target="_blank" lang="en" class="adress"> info&#64devstudio.com </a></li>
+                    <li><a href="https://cutt.ly/HHQWCcf" rel="noopener noreferrer" target="_blank"
+                            class="map adress">г.
+                            Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a href="mailto:info@devstudio.com" target="_blank" lang="en" class="adress">
+                            info&#64devstudio.com
+                        </a></li>
                     <li><a href="tel:+380961111111" target="_blank" class="adress"> +38 096 111 11 11 </a></li>
                 </ul>
             </address>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>
