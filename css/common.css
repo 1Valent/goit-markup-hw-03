@@ -19,6 +19,13 @@
     --team-bgc:#F5F4FA;
     --hero-footer-color:#2F303A;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
     /* общие настройки */
 .list {
     list-style: none;
@@ -92,7 +99,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    cursor: pointer;
+    cursor: cell;
 }
 .hero-button:hover {
     background-color: var(--button-hover);
@@ -100,7 +107,6 @@
 
 /* advanteges */
 .advantages-title {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -113,7 +119,6 @@
 
 /* activity */
 .activity > .section-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -123,7 +128,6 @@
     background-color:var(--team-bgc) ;
 }
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17; 
     text-align: center; 
@@ -171,7 +175,7 @@
 .job-option {
     color: var(--main-text-color);
     background-color:var(--team-bgc);
-    cursor: pointer;
+    cursor: cell;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -189,7 +193,6 @@
 .job-list-title {
     letter-spacing: 0.06em;
     color:var(--main-text-color);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
