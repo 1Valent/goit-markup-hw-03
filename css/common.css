@@ -63,6 +63,11 @@ p {
 /* header */
 .header {
   color: var(--accent-color);
+  display: flex;
+}
+.header-nav {
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .logo {
   color: #000000;
@@ -76,10 +81,6 @@ p {
 }
 .logo-span {
   color: var(--accent-bgc);
-}
-.header-nav {
-  padding-bottom: 32px;
-  padding-top: 32px;
 }
 .site-nav .link {
   color: var(--main-text-color);
