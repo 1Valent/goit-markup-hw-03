@@ -17,99 +17,125 @@
 <body class="page">
     <!--шапка сайта-->
     <header class="header">
-        <div class="container">
+        <div class="container nav">
             <a href="/index.html" lang="en" class="logo"><span class="logo-span">Web</span>Studio</a>
-            <div class="header-nav">
-                <nav>
-                    <ul class="list site-nav">
-                        <li><a href="./index.html" class="link current">Студия</a></li>
-                        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                        <li><a href="#" class="link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="list auth-nav">
-                    <li><a href="mailto:info@devstudio.com" target="_blank" class="link"> info&#64devstudio.com </a>
-                    </li>
-                    <li><a href="tel:+380961111111" target="_blank" class="link"> +38 096 111 11 11 </a></li>
+            <nav>
+                <ul class="list site-nav">
+                    <li class=" nav-item"><a href="./index.html" class="link ">Студия</a></li>
+                    <li class=" nav-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li class=" nav-item"><a href="#" class="link">Контакты</a></li>
                 </ul>
-            </div>
+            </nav>
+            <ul class="list auth-nav">
+                <li class=" nav-item"><a href="mailto:info@devstudio.com" target="_blank" class="link">
+                        info&#64devstudio.com </a>
+                </li>
+                <li class=" nav-item"><a href="tel:+380961111111" target="_blank" class="link"> +38 096 111 11 11 </a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
         <!-- job-options -->
-        <section class="job-list section">
+        <section class="job section">
             <!-- спрятать -->
             <h1 class="visually-hidden">job-options</h1>
-            <ul class="list container" class="job-options-list">
-                <li><button type="button" class="job-option all">Все</button></li>
-                <li><button type="button" class="job-option web">Веб-сайты</button></li>
-                <li><button type="button" class="job-option app">Приложения</button></li>
-                <li><button type="button" class="job-option design">Дизайн</button></li>
-                <li><button type="button" class="job-option marketing">Маркетинг</button></li>
+            <ul class="job-list list container">
+                <li class="job-icon"><button type="button" class="job-option all">Все</button></li>
+                <li class="job-icon"><button type="button" class="job-option web">Веб-сайты</button></li>
+                <li class="job-icon"><button type="button" class="job-option app">Приложения</button></li>
+                <li class="job-icon"><button type="button" class="job-option design">Дизайн</button></li>
+                <li class="job-icon"><button type="button" class="job-option marketing">Маркетинг</button></li>
             </ul>
-            <ul class="list container">
-                <li>
+            <!-- развернутый список -->
+            <ul class="job-full list container">
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/1.jpg" alt="Технокряк" width="370" height="294">
-                        <h2 class="job-list-title">Технокряк</h2>
-                        <p class="job-list-text">Веб-сайт</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Технокряк</h2>
+                            <p class="job-list-text">Веб-сайт</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/2.jpg" alt="Постер New Orlean vs Golden Star" width="370"
                             height="294">
-                        <h2 class="job-list-title">Постер New Orlean vs Golden Star</h2>
-                        <p class="job-list-text">Дизайн</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Постер New Orlean vs Golden Star</h2>
+                            <p class="job-list-text">Дизайн</p>
+                        </div>
                     </a>
                 </li>
-                <li>
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/3.jpg" alt="Ресторан Seafood" width="370" height="294">
-                        <h2 class="job-list-title">Ресторан Seafood</h2>
-                        <p class="job-list-text">Приложение</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Ресторан Seafood</h2>
+                            <p class="job-list-text">Приложение</p>
+                        </div>
+
                     </a>
                 </li>
-                <li>
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/4.jpg" alt="Проект Prime" width="370" height="294">
-                        <h2 class="job-list-title">Проект Prime</h2>
-                        <p class="job-list-text">Маркетинг</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Проект Prime</h2>
+                            <p class="job-list-text">Маркетинг</p>
+                        </div>
+
                     </a>
                 </li>
-                <li>
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/5.jpg" alt="Проект Boxes" width="370" height="294">
-                        <h2 class="job-list-title">Проект Boxes</h2>
-                        <p class="job-list-text">Приложение</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Проект Boxes</h2>
+                            <p class="job-list-text">Приложение</p>
+                        </div>
+
                     </a>
                 </li>
-                <li>
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/6.jpg" alt="Inspiration has no Borders" width="370" height="294">
-                        <h2 class="job-list-title">Inspiration has no Borders</h2>
-                        <p class="job-list-text">Веб-сайт</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Inspiration has no Borders</h2>
+                            <p class="job-list-text">Веб-сайт</p>
+                        </div>
+
                     </a>
                 </li>
-                <li>
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/7.jpg" alt="Издание Limited Edition" width="370" height="294">
-                        <h2 class="job-list-title">Издание Limited Edition</h2>
-                        <p class="job-list-text">Дизайн</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Издание Limited Edition</h2>
+                            <p class="job-list-text">Дизайн</p>
+                        </div>
+
                     </a>
                 </li>
-                <li>
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/8.jpg" alt="Проект LAB" width="370" height="294">
-                        <h2 class="job-list-title">Проект LAB</h2>
-                        <p class="job-list-text">Маркетинг</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Проект LAB</h2>
+                            <p class="job-list-text">Маркетинг</p>
+                        </div>
+
                     </a>
                 </li>
-                <li>
+                <li class="job-full-icon">
                     <a class="job-list-link" href="">
                         <img src="./images/portfolio/9.jpg" alt="Growing Business" width="370" height="294">
-                        <h2 class="job-list-title">Growing Business</h2>
-                        <p class="job-list-text">Приложение</p>
+                        <div class="job-full-undertext">
+                            <h2 class="job-list-title">Growing Business</h2>
+                            <p class="job-list-text">Приложение</p>
+                        </div>
+
                     </a>
                 </li>
             </ul>
@@ -118,17 +144,19 @@
     <footer class="footer">
         <div class="container">
             <a href="/index.html" lang="en" class="footer-logo"><span class="logo-span">Web</span>Studio</a>
-            <address>
-                <ul class="list">
-                    <li><a href="https://cutt.ly/HHQWCcf" rel="noopener noreferrer" target="_blank"
+            <address class="footer-adress">
+                <ul class="footer-list list">
+                    <li class="footer-icon"><a href="https://cutt.ly/HHQWCcf" rel="noopener noreferrer" target="_blank"
                             class="map adress">г.
                             Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a href="mailto:info@devstudio.com" target="_blank" lang="en" class="adress">
+                    <li class="footer-icon"><a href="mailto:info@devstudio.com" target="_blank" lang="en"
+                            class="adress">
                             info&#64devstudio.com
                         </a></li>
-                    <li><a href="tel:+380961111111" target="_blank" class="adress"> +38 096 111 11 11 </a></li>
+                    <li class="footer-icon"><a href="tel:+380961111111" target="_blank" class="adress"> +38 096 111 11
+                            11 </a></li>
                 </ul>
-            </address>
+            </address class="footer-adress">
         </div>
     </footer>
 </body>
