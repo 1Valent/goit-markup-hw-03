@@ -36,8 +36,10 @@ p {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-.container {
-  display: flex;
+.section {
+  padding: 95px 0;
+}
+.container-section {
   padding: 0 15px;
   margin: 0 auto;
 
@@ -58,9 +60,9 @@ p {
 }
 
 /* header */
-.container.nav {
-  align-items: center;
-  margin: 0 auto;
+.container-section.nav {
+  display: flex;
+  padding: 0 15px;
 }
 
 .logo {
@@ -137,11 +139,13 @@ p {
 
 .hero.section {
   background-color: var(--hero-footer-color);
+}
+.container-section.hero {
+  display: block;
   letter-spacing: 0.06em;
   text-align: center;
   padding: 200px 0;
 }
-
 .hero-title {
   width: 696px;
   margin: 0 auto;
@@ -176,14 +180,20 @@ p {
 }
 
 /* advanteges */
+.container-section {
+}
 .list.container {
-  justify-content: space-between;
-  padding: 94px 15px;
-  margin: 0 auto;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 .advanteges-li {
   width: 270px;
 }
+.advanteges-li:not(:first-child) {
+  margin-left: 30px;
+}
+
 .advantages-title {
   font-size: 14px;
   line-height: 1.14;
@@ -198,7 +208,10 @@ p {
 }
 
 /* activity */
-.activity .container {
+.activity.section {
+  margin-top: 0;
+}
+.activity .container-section {
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -206,12 +219,11 @@ p {
   font-size: 36px;
   line-height: 1.17;
   margin: 0 auto;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .activity .list {
   display: flex;
   padding: 0;
-  padding-bottom: 96px;
   margin: 0;
 }
 
@@ -228,15 +240,9 @@ p {
   background-color: var(--team-bgc);
 }
 
-.team .container {
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
 .team-title {
-  padding: 96px 0 50px;
-  margin: 0 auto;
-
+  text-align: center;
+  margin: 0 auto 50px;
   font-size: 36px;
   line-height: 1.17;
 }
@@ -245,8 +251,8 @@ p {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 96px;
 }
+
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -279,15 +285,12 @@ p {
 /* footer */
 
 .footer {
+  padding: 60px 0;
   color: var(--accent-color);
   background-color: var(--hero-footer-color);
 }
-.footer .container {
-  flex-direction: column;
-}
+
 .footer-logo {
-  padding: 60px 0 20px;
-  margin-right: auto;
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
@@ -296,9 +299,11 @@ p {
   text-decoration: none;
 }
 
+.footer-adress {
+  margin-top: 20px;
+}
 .footer-list {
   padding: 0;
-  padding-bottom: 60px;
   margin: 0;
 }
 
@@ -322,9 +327,10 @@ p {
 }
 /* Page 2 */
 /* job options */
-.job-list.list {
+.job-list {
+  display: flex;
   justify-content: center;
-  padding: 94px 0 50px;
+  margin-bottom: 50px;
 }
 .job-icon:not(:last-child) {
   margin-right: 8px;
@@ -347,7 +353,8 @@ p {
   background-color: var(--accent-bgc);
 }
 
-.job-full.container {
+.job-full.container-section {
+  display: flex;
   flex-wrap: wrap;
 }
 .job-full-icon {
@@ -358,9 +365,10 @@ p {
 }
 .job-full-icon:nth-child(3n) {
   margin-right: 0;
-  margin-bottom: 30px;
 }
-
+.job-full-icon:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 .job-list-link {
   text-decoration: none;
 }
