@@ -21,6 +21,7 @@
   --hero-footer-color: #2f303a;
   --header-top-collor: #c4c4c4;
   --border-job-icon: #eeeeee;
+  --border-header: #ececec;
 }
 
 h1,
@@ -37,7 +38,7 @@ p {
   letter-spacing: 0.03em;
 }
 .section {
-  padding: 95px 0;
+  padding: 94px 0;
 }
 .container-section {
   padding: 0 15px;
@@ -60,14 +61,19 @@ p {
 }
 
 /* header */
-.container-section.nav {
+.header {
+  border-bottom: 1px solid var(--border-header);
+}
+.nav-section {
   display: flex;
-  padding: 0 15px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .logo {
   text-decoration: none;
-  padding: 24px 0 25px;
+  padding: 24px 0;
+  margin-right: 93px;
 
   color: #000000;
   font-family: Raleway;
@@ -83,8 +89,7 @@ p {
 .site-nav {
   display: flex;
   margin: 0;
-  padding: 22px 0;
-  margin-left: 83px;
+  padding: 0;
 }
 
 .nav-item:not(:last-child) {
@@ -93,7 +98,7 @@ p {
 
 .site-nav .link {
   display: block;
-  padding: 10px 10px;
+  padding: 32px 0;
 
   color: var(--main-text-color);
   letter-spacing: 0.02em;
@@ -114,14 +119,13 @@ p {
 
 .auth-nav {
   display: flex;
-  padding: 22px 0;
   margin: 0;
   margin-left: auto;
 }
 
 .auth-nav .link {
   display: block;
-  padding: 10px 0 10px 10px;
+  padding: 32px 0;
   color: var(--low-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -137,14 +141,13 @@ p {
 
 /* hero */
 
-.hero.section {
+.hero {
   background-color: var(--hero-footer-color);
+  padding: 200px 0;
 }
-.container-section.hero {
-  display: block;
+.container-section.hero-section {
   letter-spacing: 0.06em;
   text-align: center;
-  padding: 200px 0;
 }
 .hero-title {
   width: 696px;
@@ -159,7 +162,6 @@ p {
 }
 
 .hero-button {
-  display: inline-block;
   text-align: center;
   margin: 0 auto;
 
@@ -180,7 +182,8 @@ p {
 }
 
 /* advanteges */
-.container-section {
+.advantages.section {
+  padding-bottom: 0;
 }
 .list.container {
   display: flex;
