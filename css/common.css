@@ -332,6 +332,8 @@ img {
 .job-list {
   padding: 0;
   display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -357,6 +359,8 @@ img {
 }
 
 .job-full {
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
